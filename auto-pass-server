@@ -1,0 +1,3 @@
+# This is a cron file that resides in /etc/cron.d to run our script on the daily.
+# It will run and update our passwords at 00:05 every day.
+5 0 * * * root /etc/nhscs/auto-pass-server/genpass.sh >/dev/null 2>&1
